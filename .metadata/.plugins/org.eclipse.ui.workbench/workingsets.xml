@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1406031446133_1" label="mnnm" name="mnnm"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1434802419288_2" label="JavaProjects" name="JavaProjects">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ClientBucky" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/DataGramClient" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mouseclicktest" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/JavaTest1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Datagram" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ReadFromexcell" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1391350087394_0" label="Window Working Set" name="Aggregate for window 1391350087391"/>
+</workingSetManager>

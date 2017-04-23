@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_mix" >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+     
+        android:text="@string/hello_world" />
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:tools="http://schemas.android.com/tools"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    tools:context=".Activity_mix" >
+		
+		    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     
+        android:text="@string/amr" />
+		    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     
+        android:text="Abd" />
+		    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     
+        android:text="El latief" />
+		
+		</LinearLayout>
+		
+			
+		
+		<Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Left" />
+		
+		
+</LinearLayout>

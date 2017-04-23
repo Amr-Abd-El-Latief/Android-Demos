@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+			<TableRow android:id="@+id/TableRow01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			
+			    
+			   
+						   <Button
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					     
+					        android:text="first raw 1" />
+						<Button
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					     
+					        android:text="second raw 1" />
+					   <Button
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="third raw 1" /> 
+			    
+						
+			</TableRow>
+			<TableRow android:id="@+id/TableRow02"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						
+								    <Button
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					     
+					        android:text="first raw 2" />
+							    <Button
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					     
+					        android:text="@id/second raw2" />
+							    <Button
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					     
+					        android:text="third raw2" />
+		
+			    
+						
+			</TableRow>
+			<TableRow android:id="@+id/TableRow03"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						
+			        <Button
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					     
+					        android:text="/first raw 3" />
+							    <Button
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					     
+					        android:text="second raw3" />
+							    <Button
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					     
+					        android:text="third raw3" />
+		
+			    
+			    
+			</TableRow>
+			
+</TableLayout>

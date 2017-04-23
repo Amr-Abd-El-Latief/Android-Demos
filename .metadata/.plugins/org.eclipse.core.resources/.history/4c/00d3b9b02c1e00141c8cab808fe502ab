@@ -1,0 +1,59 @@
+package com.Market.quotes;
+
+import java.util.Timer;
+
+
+
+import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+	int QuotsCounter = 0;
+	TextView v1;
+	
+	 String[] Quotes = {"Be who you are and say what you feel because those who mind don&apos;t matter and those who matter don&apos;t mind", "It is not the length of life, but depth of life.", "One test of the correctness of educational procedure is the happiness of the child", "Education: a debt due from present to future generations","It is not the case that teaching necessarily implies learning. What teaching implies is merely the intention to bring about learning"};
+	
+	 
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		v1 = (TextView) findViewById(R.id.textview1);
+		
+		new CountDownTimer(80000,4000) { 
+			public void onTick(long millisUntilFinished) {
+			
+		    	if (QuotsCounter>=4)
+		    	{
+		    		
+		    		QuotsCounter = 0;
+		    	}
+		    	v1.setText(Quotes[QuotsCounter]);
+		   
+		    	
+		    	QuotsCounter++;
+		    }
+
+			
+
+			public void onFinish() {
+				v1.setText(Quotes[0]);
+
+				}
+			}.start();
+					
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.activity_main, menu);
+		return true;
+	}
+
+}

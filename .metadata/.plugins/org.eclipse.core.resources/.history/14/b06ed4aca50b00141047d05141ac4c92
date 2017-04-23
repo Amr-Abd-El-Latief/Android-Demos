@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bookbg"
+    tools:context=".MainActivity" >
+
+         <TextView
+             android:id="@+id/textview1"
+             android:gravity="center"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:text="Be who you are and say what you feel because those who mind don&apos;t matter and those who matter don&apos;t mind."
+             android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    
+
+     
+</LinearLayout>

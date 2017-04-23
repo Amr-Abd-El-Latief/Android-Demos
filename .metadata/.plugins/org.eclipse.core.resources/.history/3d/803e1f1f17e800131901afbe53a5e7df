@@ -1,0 +1,90 @@
+package com.example.mahmoud_wafik_project;
+
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class contacts extends Main{
+	Button button;
+	TextView name; 
+	TextView phone; 
+	public static final String MyPREFERENCES = "MyPrefs" ; 
+	public static final String Name = "nameKey"; 
+	public static final String Phone = "phoneKey";
+	SharedPreferences sharedpreferences;
+	ArrayList<String> contacts;
+	protected void onCreate(Bundle savedInstanceState) {
+	
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.contacts);
+		name = (TextView) findViewById(R.id.name); 
+		phone = (TextView) findViewById(R.id.phone);
+		sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+		if (sharedpreferences.contains(Name)){ 
+			name.setText(sharedpreferences.getString(Name, ""));
+			} 
+		if (sharedpreferences.contains(Phone)) { 
+			phone.setText(sharedpreferences.getString(Phone, ""));
+			}
+	}
+		
+	
+	
+	public void run(View view){ 
+			String n = name.getText().toString();
+			String ph = phone.getText().toString();
+			Editor editor = sharedpreferences.edit(); 
+			editor.putString(Name, n); editor.putString(Phone, ph);
+			editor.commit();
+			
+			contacts = new ArrayList<String>();
+			 String[] NamesyArray;
+			 
+			 String[] NumbersyArray;
+			
+			Map<String, ?> keys = sharedpreferences.getAll();
+			NamesyArray = (String[]) sharedpreferences.getAll().entrySet().toArray();
+			
+			
+			//sharedpreferences.getAll();
+			
+			
+		 @SuppressWarnings("unchecked")
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, 
+			      R.layout.contacts,NamesyArray);
+		 
+		 
+		 //   sharedpreferences.getAll();	      
+		 
+			      ListView listView = (ListView) findViewById(R.id.listView);
+			      listView.setAdapter(adapter);
+			      
+}
+
+@Override 
+public boolean onCreateOptionsMenu(Menu menu) { 
+	 
+	getMenuInflater().inflate(R.menu.main, menu); return true; }
+}
+	  
+	 	
+	  
+	 	
+
+	 
+	         
